@@ -66,7 +66,7 @@ function PaginationBar({ currentPage, pageCount, gotoPage, typeLoading }) {
           </button>
           <button
             disabled={isNextButtonDisabled}
-            className="p-1 px-3"
+            className="p-1 px-3 disabled:text-gray-600"
             onClick={() => gotoPage(currentPage + 1, "next")}
           >
             {(typeLoading === "next" && <Loader />) || "Next"}
