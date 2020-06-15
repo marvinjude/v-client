@@ -4,7 +4,7 @@ function Header({ setLeftBarIsOpened }) {
   const toggleLeftBar = () => setLeftBarIsOpened((state) => !state);
 
   return (
-    <div className="bg-black w-full h-10 px-5 flex items-center">
+    <div className="bg-black w-full h-10 px-5 flex items-center fixed top-0">
       <button
         className="bg-gray-600 p-1 rounded bg-opacity-50"
         onClick={toggleLeftBar}
