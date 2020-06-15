@@ -1,6 +1,9 @@
 const { colors } = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  purge: {
+    content: ["./src/**/*.jsx", "./src/App.js"],
+  },
   corePlugins: {
     outline: true,
   },
@@ -19,5 +22,5 @@ module.exports = {
     textColor: ["disabled"],
   },
 
-  plugins: [require("@tailwindcss/custom-forms")],
+  plugins: [],
 };
