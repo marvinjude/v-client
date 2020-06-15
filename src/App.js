@@ -52,7 +52,6 @@ function App() {
 
     const { data } = await fetchUsers(filter, {
       currentPage: pageNumber,
-      pageSize: 100,
     });
 
     setData(data);
